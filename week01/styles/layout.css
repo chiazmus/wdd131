@@ -1,0 +1,84 @@
+:root {
+    --background-primary: #111;
+    --background-secondary: #203030;
+    --background-tertiary: #283838;
+    --primary-gray: #999;
+    --accent-1: #2b8;
+}
+
+/* General Reset (I like things my way) */
+* {
+    font-family: monospace, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-primary);
+    color: var(--primary-gray);
+}
+
+body {
+ display: grid;
+ grid-template: 20% 70% 10%/ 1fr 1fr 1fr;
+ height: 100vh;
+}
+
+header {
+    background-color: var(--background-tertiary);
+    grid-row: 1;
+    grid-column: 1 / span 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+header h1 {
+    margin: 3rem;
+    background-color: var(--background-tertiary);
+}
+
+header .nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--background-secondary);
+}
+
+header .nav a {
+    background-color: var(--background-secondary);
+    padding: 1rem;
+    text-decoration: none;
+    font-size: large;
+}
+
+h2, h3 {
+    margin: 3rem;
+}
+
+main {
+    grid-row: 2;
+    grid-column: 1 / span 2;
+    background-color: var(--background-primary);
+}
+
+aside {
+    grid-row: 2;
+    grid-column: 3;
+    background-color: #222;
+}
+
+aside h2 {
+    background-color: #222;
+}
+
+footer {
+    grid-row: 3;
+    grid-column: 1 / span 3;
+    background-color: var(--background-tertiary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h3 {
+    background-color: var(--background-tertiary);
+    margin: 0;
+}

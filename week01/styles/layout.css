@@ -3,7 +3,7 @@
     --background-secondary: #203030;
     --background-tertiary: #283838;
     --primary-gray: #999;
-    --accent-1: #2b8;
+    --accent-1: rgb(22, 238, 166);
 }
 
 /* General Reset (I like things my way) */
@@ -31,6 +31,7 @@ header {
 
 }
 
+
 header h1 {
     margin: 3rem;
     background-color: var(--background-tertiary);
@@ -40,17 +41,52 @@ header nav {
     display: flex;
     justify-content: space-evenly;
     background-color: var(--background-secondary);
+    height: 3rem;
+    transition: height 300ms ease; 
 }
 
 header nav a {
+    display: none;
     background-color: var(--background-secondary);
     padding: 1rem;
     text-decoration: none;
-    font-size: large;
+    font-size: large; 
+}
+
+header nav:hover {
+    height: 5rem;
+}
+
+header nav:hover a {
+    display: block;
+}
+
+.linkContainer i, .linkContainer a {
+    transition: 300ms;
+}
+
+.linkContainer:hover i, .linkContainer:hover a {
+    color: var(--accent-1);
+}
+
+.linkContainer {
+    background-color: var(--background-secondary);
+    padding: 1rem;
+    width: 10rem;
+    font-size: large;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 h2, h3 {
     margin: 3rem;
+}
+
+.fa-solid {
+    color: var(--primary-gray);
+    background-color: var(--background-secondary);
 }
 
 main {

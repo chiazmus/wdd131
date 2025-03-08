@@ -3,9 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - Andrew Burnah Home Page">
+    <meta name="author" content="Andrew Burnah">
+    <title>WDD 131 – Dynamic Web Fundamentals - Andrew Burnah</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer="true"></script>
 </head>
 <body>
-    
+    <header>
+        <h1>WDD 131 – Dynamic Web Fundamentals - Andrew Burnah</h1>
+        <nav>
+            <a href="https://nz.linkedin.com/">linkedin</a>
+            <a href="https://byupw.instructure.com/">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/2?lang=eng&id=p25-p26#p25">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <section class="card" id="card1">
+            <h2>About Me</h2>
+            <div class="aboutMeContainer">
+                <p>My name is Andrew Burnah!  I was born in utah, and served a two year mission, spanish speaking in
+                    Anaheim, California.  I recently moved with my family to Palmerston North, New Zealand, where I serve as the 
+                    ward mission leader, and am studying to get a bachelors in computer science.</p>
+                <img src="images/profile.png" alt="profile">
+            </div>
+            <div class="aboutMyCountry">
+                <h3>New Zealand</h3>
+                <p>New Zealand is an awesome country where the most dramatic thing on the news is how terrible the school lunches are.  It's filled with pastoral
+                    country side, and there are more sheep than people.  Its well known for its many beautiful locations, its empty beaches, and the variety of birds.
+                The food here is amazing, especially the dairy products, like ice cream and chocolate.</p>
+            </div>
+        </section>
+        <section class="card" id="card2">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://www.geeksforgeeks.org/">Geeks for Geeks</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a></li>
+                <li><a href="https://chatgpt.com/">Chat GPT</a></li>
+                <li><a href="https://stackoverflow.com/questions">Stack Overflow</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> • Andrew Burnah • New Zealand</p>
+        <p id="lastmodified"></p>
+    </footer>
 </body>
 </html>

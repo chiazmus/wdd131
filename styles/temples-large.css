@@ -7,7 +7,7 @@
 
     nav {
         flex-direction: row;
-        width: clamp(auto, 30%, 50%);
+        width: clamp(10%, 30%, 50%);
         background-color: #222;
     }
 

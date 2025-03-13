@@ -3,11 +3,12 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        height: 5vh;
     }
 
     nav {
         flex-direction: row;
-        width: clamp(10%, 30%, 50%);
+        width: 50%;
         background-color: #222;
     }
 
@@ -22,6 +23,7 @@
 
     main {
         width: 80%;
+        height: 80vh;
     }
 
     .image-container {

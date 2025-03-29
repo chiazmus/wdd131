@@ -1,0 +1,38 @@
+@media screen and (min-width: 960px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 5vh;
+    }
+
+    nav {
+        flex-direction: row;
+        width: 50%;
+        background-color: #222;
+    }
+
+    nav a {
+        display: block;
+        padding: 1rem 2rem;
+    }
+
+    main {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+
+    #openButton {
+        display: none;
+    }
+
+    .image-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    footer {
+        height: 5%;
+        width: 100%;
+    }
+}

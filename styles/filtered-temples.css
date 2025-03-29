@@ -24,9 +24,9 @@ header {
     background-color: var(--background-accent-2);
     color: var(--color-secondary);
     display: grid;
-    padding: 2rem 0;
+    padding: 1rem 0;
     gap: 1rem;
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
 }
@@ -36,7 +36,7 @@ header h1 {
 }
 
 nav {
-    margin: 1rem;
+    margin: 0 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -82,7 +82,7 @@ nav a:hover {
 
 main {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 5rem auto;
     height: 90%;
     padding: 0;
     display: flex;
@@ -123,8 +123,7 @@ main h2 {
 }
 
 footer {
-    margin-top: 2rem;
-    padding: 2rem 0;
+    padding: 1rem 0;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -132,7 +131,7 @@ footer {
     color: var(--color-secondary);
     justify-content: center;
     align-items: center;
-    position: relative;
+    position: fixed;
     bottom: 0;
     left: 0;
 }

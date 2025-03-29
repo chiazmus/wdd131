@@ -17,6 +17,9 @@
 body {
     background-color: var(--background-primary);
     width: 100vw;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -26,9 +29,6 @@ header {
     display: grid;
     padding: 1rem 0;
     gap: 1rem;
-    position: fixed;
-    top: 0;
-    left: 0;
 }
 
 header h1 {
@@ -88,6 +88,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-grow: 1;
 }
 
 main h2 {
@@ -131,7 +132,4 @@ footer {
     color: var(--color-secondary);
     justify-content: center;
     align-items: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
 }

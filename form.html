@@ -8,6 +8,9 @@
     <title>WDD 131 – Form</title>
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/form.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -18,20 +21,22 @@
             <label>Product Name<select name="productName" id="productName" required>
                 <option value="" disabled selected>Select a Product</option>
             </select></label>
-            <label id="ratinglabel">Overall Rating
-            <div class="stars">
+            <label id="ratinglabel" for="stars">Overall Rating</label>
+            <div class="stars" id="stars">
                 <label>&star;<input type="radio" name="rating" required id="1star"></label>
                 <label>&star;&star;<input type="radio" name="rating" required id="2star"></label>
                 <label>&star;&star;&star;<input type="radio" name="rating" required id="3star"></label>
                 <label>&star;&star;&star;&star;<input type="radio" name="rating" required id="4star"></label>
                 <label>&star;&star;&star;&star;&star;<input type="radio" name="rating" required id="5star"></label>
-            </div></label>
+            </div>
             <label>Date of Installation<input type="date" id="installDate" name="installDate" required></label>
-            <label>Useful Features <span class="optional">(optional)</span><div class="features">
+            <label>Useful Features <span class="optional">(optional)</span></label>
+            <div class="features">
                 <label><input type="checkbox" id="durability" name="durability" value="yes">Durability</label>
                 <label><input type="checkbox" id="ease" name="ease" value="yes">Ease of Use</label>
                 <label><input type="checkbox" id="performance" name="performance" value="yes">Performance</label>
-            </div></label>
+                <label><input type="checkbox" id="design" name="design" value="yes">Design</label>
+            </div>
             <label>Written Review <span class="optional">(optional)</span><textarea name="writtenReview" id="writtenReview"></textarea></label>
             <label>Name <span class="optional">(optional)</span><input type="text" id="userName" name="userName"></label>
             <input type="submit" value="Send My Reveiw">

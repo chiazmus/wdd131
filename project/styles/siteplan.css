@@ -1,0 +1,101 @@
+:root{
+    --primary-bg: #0a0f1f;
+    --secondary-bg: #1a233a;
+    --accent-color: #00ffff;
+    --text-color: #e0e0e0;
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, main, header {
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+    font-family: var(--font-body);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: rgba(10, 15, 31, 0.8);
+    backdrop-filter: blur(5px);
+    /* That stuff ^ makes the header cool.  Low key totally stole that from a cool site I saw. */
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: var(--accent-color) 1px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-heading);
+}
+
+
+h1 {
+    margin: 1rem 3rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card {
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    padding: 65px;
+    align-items: center;
+    text-align: center;
+    margin: 4rem auto;
+    width: 100%;
+    max-width: 900px;
+}
+
+.card h2 {
+    margin: 2rem;
+}
+
+.accent {
+    color: var(--accent-color);
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+li {
+    margin: 2rem;
+}
+
+img {
+    margin: 2rem 0;
+}
+
+footer {
+    background-color: var(--secondary-bg);
+    color: var(--text-color);
+    min-height: 5rem;
+    padding:2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer :nth-child(even) {
+    color: var(--accent-color);
+}

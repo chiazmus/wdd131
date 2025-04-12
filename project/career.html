@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A corporate site for a fictional tech company specializing in robotics and artificial intelligence.">
+    <meta name="author" content="Andrew Burnah">
+    <title>Demiurgic Dynamics Careers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="name-container">
+            <img src="images/logo.png" alt="logo" loading="lazy">
+            <h1><a href="index.html">Demiurgic <span class="accent">Dynamics</span></a></h1>
+        </div>
+        <button id="menu" aria-label="menuButton"></button>
+        <nav id="navigation">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="career.html" class="accent">Careers</a>
+            <a href="about.html">About Us</a> 
+        </nav>
+    </header>
+    <main>
+        <div class="card baccent" id="career-title">
+            <h2>Careers</h2>
+            <h3>Join the team at Demiurgic <span class="accent">Dynamics</span></h3>
+            <p>Here at Demiurgic Dynamics, we offer a variety of positions to suit your skills and interests. We are always looking for talented individuals who can make a difference in the workplace.</p>
+        </div>
+        <div class="card">
+            <h2 class="accent">Positions open near you!</h2>
+            <div class="what-we-do">
+                <figure><img src="images/debugger.webp" alt="debugger" loading="lazy" width="250px" height="250px"><figcaption>Simulate Debugger</figcaption></figure>
+                <figure><img src="images/synthetic-engineer.webp" alt="engineer" loading="lazy" width="250px" height="250px"><figcaption>Synthetics Engineer</figcaption></figure>
+                <figure><img src="images/quality-assurance.webp" alt="analyst" loading="lazy" width="250px" height="250px"><figcaption>Quality Assurance Analyst</figcaption></figure>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Apply Now!</h2>
+            <form action="applied.html" method="get">
+                <label>First Name<input type="text" name="" placeholder="First Name" required></label>
+                <label>Last Name<input type="text" name="" placeholder="Last Name" required></label>
+                <label>Email<input type="email" name="" placeholder="email@example.com" required></label>
+                <label>Phone (Optional)<input type="tel" name="" placeholder="1112346789"></label>
+                <label>Position<select name="Position" id="" required>
+                    <option value="debugger">Simulate Debugger</option>
+                    <option value="debugger">Synthetics Engineer</option>
+                    <option value="debugger">Quality Assurance Analyst</option>
+                </select></label>
+                <button type="submit">Apply For Position</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> • Andrew Burnah • New Zealand • <a href="siteplan.html">Site Plan</a></p>
+        <p id="lastmodified"></p>
+    </footer>
+</body>
+</html>

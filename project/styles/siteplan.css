@@ -58,13 +58,13 @@ main {
     padding: 65px;
     align-items: center;
     text-align: center;
-    margin: 4rem auto;
+    margin: 2rem auto;
     width: 100%;
     max-width: 900px;
 }
 
 .card h2 {
-    margin: 2rem;
+    margin: 1rem;
 }
 
 .accent {

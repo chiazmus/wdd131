@@ -1,0 +1,284 @@
+:root{
+    --primary-bg: #0a0f1f;
+    --secondary-bg: #1a233a;
+    --accent-color: #00ffff;
+    --text-color: #e0e0e0;
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Roboto', sans-serif;
+}
+
+* {
+    color: var(--text-color);
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent-color) var(--primary-bg);
+    text-decoration: none;
+}
+
+body, main, header {
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+    font-family: var(--font-body);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: rgba(10, 15, 31, 0.8);
+    backdrop-filter: blur(5px);
+    /* That stuff ^ makes the header cool.  Low key totally stole that from a cool site I saw. */
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: var(--accent-color) 1px solid;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    font-family: var(--font-heading);
+}
+
+.name-container {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1.5rem;
+    margin-right: 5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.name-container h1 {
+    margin: 0;
+}
+
+.name-container img {
+    width: 2rem;
+    height: 2rem;
+    margin: 0 1rem;
+    padding-left: 1rem;
+}
+
+nav {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav a {
+    display: none;
+    color: var(--text-color);
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+#menu {
+    position: absolute;
+    display: block;
+    top: 1rem;
+    right: 0.2rem;
+    font-size: 24px;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+.open a {
+    display: block;
+    text-decoration: none;
+    font-size: large;
+}
+
+.accent {
+    color: var(--accent-color);
+}
+
+.baccent {
+    background-color: var(--secondary-bg);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+main h2 {
+    margin: 2rem;
+}
+
+
+.card {
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+    align-items: center;
+    text-align: center;
+    margin: 2rem auto;
+    width: 100%;
+}
+
+.card h2 {
+    width: 100%;
+    max-width: 900px;
+    margin: 2rem auto;
+}
+
+.card p, h3 {
+    width: 100%;
+    max-width: 900px;
+    margin: 1rem auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-width: 500px;
+    width: 100%;
+    background-color: var(--secondary-bg);
+    border-radius: 10px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 10%;
+    max-width: 80%;
+}
+
+input {
+    height: 2rem;
+}
+
+select {
+    height: 2.5rem;
+}
+
+button[type=submit]{
+    max-width: 80%;
+    margin: 10%;
+    height: 2.5rem;
+}
+
+/* Special Cases */
+
+.what-we-do {
+    display: flex;
+    flex-direction: column;
+}
+
+#career-title {
+    margin-top: 0;
+}
+
+#titlecard {
+    margin: 200px 0;
+}
+
+#disclaimer {
+    text-align: center;
+    margin: 2rem;
+}
+
+#wolf-system {
+    width: 100%;
+    height: auto;
+    max-width: 80%;
+    border-radius: 10px;
+}
+
+/* Footer stuff */
+
+footer {
+    margin: none;
+    background-color: var(--secondary-bg);
+    color: var(--text-color);
+    min-height: 5rem;
+    padding:2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+.products {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-bottom: 2rem;
+}
+
+.product-card {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: var(--secondary-bg);
+    border-radius: 10px;
+}
+
+/* Desktop Changes */
+
+ @media screen and (min-width: 1000px) {
+    #menu {
+        display: none;
+    }
+
+    header {
+        flex-direction: row;
+    }
+
+    .name-container{
+        margin: 1rem 0;
+        padding: 0;
+        width: fit-content;
+        flex-grow: 1;
+    }
+
+    nav {
+        flex-direction: row;
+        flex-grow: 1;
+        justify-content: space-evenly;
+    }
+
+    .products {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .what-we-do {
+        flex-direction: row;
+    }
+
+    #wolf-system {
+        max-width: 800px;
+    }
+
+    nav a {
+        display: block;
+        text-decoration: none;
+        font-size: large;   
+        padding: 1rem 2rem;  
+    }
+
+    }

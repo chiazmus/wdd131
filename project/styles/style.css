@@ -88,10 +88,12 @@ nav a:hover {
 }
 
 #menu::before {
+    color: var(--primary-bg);
     content: "≡";
 }
 
 #menu.open::before {
+    color: var(--primary-bg);
     content: "X";
 }
 

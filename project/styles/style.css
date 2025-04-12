@@ -164,16 +164,19 @@ label {
 
 input {
     height: 2rem;
+    color: black;
 }
 
 select {
     height: 2.5rem;
+    color: black;
 }
 
 button[type=submit]{
     max-width: 80%;
     margin: 10%;
     height: 2.5rem;
+    color: black;
 }
 
 /* Special Cases */
